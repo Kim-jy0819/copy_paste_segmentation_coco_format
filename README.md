@@ -12,15 +12,33 @@
 3. Copy-Paste
 
 
+# Content
+```
+segmentation
+│
+├── baseline_code
+├── copy_paste_segmentation_coco_format
+│   ├─ check_copy_paste.ipynb
+│   ├─ copy_paste.py
+│   ├─ create-copy-paste-dataset.py
+│   ├─ get_coco_mask.py
+│   ├─ README.md
+│   ├─ requirements.txt
+
+'''''
+
+```
+
 
 # Usage 
 
-- 쉘 스크립트를 사용하고자 한다면 해당 디렉토리에 들어가 다음 명령어를 입력한다.
+1. 쉘 스크립트를 사용하고자 한다면 해당 디렉토리에 들어가 다음 명령어를 입력한다.
 ```
 ./copy_paste.sh
 ```
 
-- 명령어를 따로 입력하고자 한다면 다음과 같은 순서로 명령어를 입력한다.
+
+2. 명령어를 따로 입력하고자 한다면 다음과 같은 순서로 명령어를 입력한다.
 ## 1. 모듈 설치하기
 ```
 pip install -r requirements.txt
