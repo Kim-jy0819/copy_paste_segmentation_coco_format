@@ -24,7 +24,7 @@ segmentation
 │   ├─ get_coco_mask.py
 │   ├─ README.md
 │   ├─ requirements.txt
-
+├── input
 '''''
 
 ```
