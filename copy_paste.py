@@ -74,7 +74,7 @@ def rescale_src(mask_src, img_src, h, w):
     return mask_pad, img_pad
 
 
-def Large_Scale_Jittering(mask, img, min_scale=0.2, max_scale=2.0):
+def Large_Scale_Jittering(mask, img, min_scale=0.2, max_scale=2):
     rescale_ratio = np.random.uniform(min_scale, max_scale)
     h, w, _ = img.shape
 
