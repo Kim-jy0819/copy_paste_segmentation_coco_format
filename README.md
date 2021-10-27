@@ -1,1 +1,38 @@
 # copy_paste_segmentation_coco_format
+
+# 
+
+
+# Usage 
+
+- 쉘 스크립트를 사용하고자 한다면 해당 디렉토리에 들어가 다음 명령어를 입력한다.
+```
+./copy_paste.sh
+```
+
+- 명령어를 따로 입력하고자 한다면 다음과 같은 순서로 명령어를 입력한다.
+## 1. 모듈 설치하기
+```
+pip install imgviz
+pip install Shapely 
+```
+
+## 2. 원본 이미지와 json 파일을 통해 segmentation mask 생성
+```
+python get_coco_mask.py  --input_dir ../input/data/ --split train_all
+```
+
+## 3. 원본 이미지, 원본 mask, 랜덤 이미지, 랜덤 mask로부터 copy_paste
+```
+python copy_paste.py --input_dir ../input/data/ --output_dir ../input/data/ 
+```
+
+## 4. copy_paste mask로부터 coco format json 파일 만들기
+```
+python create-copy-paste-dataset.py 
+```
+
+# 참고
+https://github.com/qq995431104/Copy-Paste-for-Semantic-Segmentation
+https://github.com/chrise96/image-to-coco-json-converter
+https://arxiv.org/pdf/2012.07177v1.pdf
