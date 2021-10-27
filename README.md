@@ -1,0 +1,1 @@
+# copy_paste_segmentation_coco_format
