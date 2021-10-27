@@ -43,4 +43,4 @@ python create-copy-paste-dataset.py
 
 # 참고
 - https://github.com/qq995431104/Copy-Paste-for-Semantic-Segmentation
-- ht1tps://github.com/chrise96/image-to-coco-json-converter
+- https://github.com/chrise96/image-to-coco-json-converter
