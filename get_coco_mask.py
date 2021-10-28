@@ -17,7 +17,7 @@ def save_colored_mask(mask, save_path):
     lbl_pil.save(save_path)
  
 
-#  input_dir = ../../input/data/ 
+#  input_dir = ../input/data/ 
 #  split = train_all
  
 def main(args):
@@ -49,7 +49,7 @@ def main(args):
  
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_dir", default="../../input/data/", type=str,
+    parser.add_argument("--input_dir", default="../input/data/", type=str,
                         help="coco dataset directory")
     parser.add_argument("--split", default="train_all", type=str,
                         help="train_all or train or val")
