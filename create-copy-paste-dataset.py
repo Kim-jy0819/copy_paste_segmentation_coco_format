@@ -6,6 +6,8 @@ from src.create_annotations import *
 coco format json으로 변경하는 파일입니다. 
 
 '''
+
+
 # Label ids of the dataset
 category_ids = {
     #"Background":0,
@@ -87,6 +89,7 @@ def images_annotations_info(copy_paste_path):
     return images, annotations, annotation_id
 
 if __name__ == "__main__":
+
     # Get the standard COCO JSON format
     coco_format = get_coco_json_format()
     

@@ -9,7 +9,17 @@ import argparse
 import os
 import numpy as np
 import tqdm
+import random
+import torch
 
+def seed_everything(seed: int = 42):
+    random.seed(seed)
+    np.random.seed(seed)
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)  # type: ignore
+    torch.backends.cudnn.deterministic = True  # type: ignore
+    torch.backends.cudnn.benchmark = True  # type: ignore
 
 def save_colored_mask(mask, save_path):
     lbl_pil = Image.fromarray(mask.astype(np.uint8), mode="P")
@@ -118,6 +128,9 @@ def copy_paste(mask_src, img_src, mask_main, img_main):
 
 
 def main(args):
+    # fix seed
+    seed_everything(42)
+
     # input path
     segclass = os.path.join(args.input_dir, 'SegmentationClass')
     JPEGs = os.path.join(args.input_dir, 'JPEGImages')
