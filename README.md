@@ -20,7 +20,7 @@ segmentation
 ├── copy_paste_segmentation_coco_format
 │   ├─ check_copy_paste.ipynb
 │   ├─ copy_paste.py
-│   ├─ create-copy-paste-dataset.py
+│   ├─ mask_convert_json.py
 │   ├─ get_coco_mask.py
 │   ├─ README.md
 │   ├─ requirements.txt
