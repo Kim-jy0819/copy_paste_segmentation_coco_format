@@ -172,9 +172,9 @@ def main(args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_dir", default="../input/data/", type=str,
+    parser.add_argument("--input_dir", default="../../input/data/", type=str,
                         help="input annotated directory")
-    parser.add_argument("--output_dir", default="../input/data/", type=str,
+    parser.add_argument("--output_dir", default="../../input/data/", type=str,
                         help="output dataset directory")
     parser.add_argument("--lsj", default=True, type=bool, help="if use Large Scale Jittering")
     parser.add_argument("--lsj_min", default=0.2, type=float, help='recommend 0.2 ~ 0.4')

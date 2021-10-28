@@ -63,7 +63,7 @@ python copy_paste.py --input_dir ../input/data/ --output_dir ../input/data/
 
 ## 4. copy_paste mask로부터 coco format json 파일 만들기
 ```
-python create-copy-paste-dataset.py 
+python mask_convert_json.py 
 ```
 
 
